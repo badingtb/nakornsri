@@ -13583,7 +13583,7 @@ body:not(.no-transition) #wrapper,
 }
 
 .rc-footer .footer-nav{
-	padding:80px 20px 80px
+	padding:20px 10px 20px
 }
 
 @media (min-width:320px) and (max-width:768px)
@@ -15696,8 +15696,17 @@ img[Attributes Style] {
   }
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (max-width: 601px) {
  .exa {
-    font-size: 80px;
+    height: 100px;
+    width: auto;
+  }
+}
+.routePanel-thumbnail:hover {
+    opacity: .7;
+}
+@media screen and (max-width: 601px) {
+ .exb {
+    padding: 0px;
   }
 }
