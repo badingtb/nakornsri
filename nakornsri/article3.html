@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/popup.css" type="text/css">
     <link rel="stylesheet" href="css/image.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="./img/favicon.png">
     <!-- Document Title
@@ -34,22 +35,7 @@
         ============================================= -->
         <header id="header" class="dark">
             <div id="header-wrap" class="">
-                <div class="container clearfix">
-                    <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-                    <!-- Logo
-                    ============================================= -->
-                    <div id="logo">
-                        <a href="index.html" class="standard-logo"><img src="./img/logo.png" alt=""></a>
-                        <a href="index.html" class="retina-logo"><img src="./img/logo.png" alt=""></a>
-                    </div>
-                    <!-- #logo end -->
-                    <!-- Primary Navigation
-                    ============================================= -->
-                    <nav id="primary-menu">
-                        <ul class="sf-js-enabled" style="touch-action: pan-y;">
-                            <li><a href="article_home.html">แหล่งท่องเที่ยว</a>
-                        </ul>
-                    </nav>
+                    <div w3-include-html="navbar.html"></div>
                 </div>
             </div>
         </header>
@@ -59,49 +45,68 @@
 
         <div class="td-post-content"><div class="tTop">
 
-            <section align="center"><img src="img/big-banner-01.jpg" alt="ดื่มน้ำอุ่น"></section>
-            <h1>กำแพงเมืองเก่า นครศรีธรรมราช</h1>
+        <!-- One Big Banner  -->
+        <section class="big-banner">
+            <div class="container-full">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="img/old_0000_Layer 7.jpg" alt="Los Angeles" style="width:100%;">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/old_0001_Layer 6.jpg" alt="Chicago" style="width:100%;">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/old_0002_Layer 5.jpg" alt="New york" style="width:100%;">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ariticle start -->
+            <h1 style="margin-top: 10px;">กำแพงเมืองเก่า นครศรีธรรมราช</h1>
             <p style="text-indent: 2.5em;">กำแพงเมืองนครศรีธรรมราช เป็นกำแพงเมืองที่เคยปกป้องเมืองนครศรีธรรมราชจากข้าศึก <br>เป็นโบราณสถานที่สำคัญของจังหวัด ป็นเครื่องแสดงถึงความเก่าแก่ ความแข็งแกร่ง ความเจริญรุ่งเรือง<br> และประวัติศาสตร์อันยาวนาน ปัจจุบันได้รับการบูรณะใหม่ให้ แข็งแรงและสวยงาม เพื่อพัฒนาเป็น<br>อีก 1 สถานที่ท่องเที่ยวทางประวัติศาสตร์อันทรงคุณค่า มีลักษณะเป็นสี่เหลี่ยมผืนผ้า มีที่ตั้งอยู่ หลายจุดด้วยกัน<br> แต่ที่เหลือให้ชม คือ กำแพงเมืองด้านทิศเหนือ อยู่ริมคลองหน้าเมือง ถนนมุมป้อม ความแข็งแกร่ง<br> ความเจริญรุ่งเรือง และประวัติศาสตร์อันยาวนาน กำแพงเมืองนครศรีธรรมราชตั้งอยู่ริมคลอง <br>หน้าเมือง ถนน มุมป้อม อำเภอเมือง จังหวัดนครศรีธรรมราช การสร้างปรากฏหลักฐาน <br></p><p style="text-indent: 2.5em;">จากตำนานเมืองนครศรีธรรมราชว่าสร้างขึ้นในสมัยพระเจ้าศรีธรรมาโศกราช เมื่อตั้งเมืองขึ้นที่ หาดทรายแก้ว <br>แล้วจึงสร้างกำแพง เมืองเป็นกำแพงดิน มีคูล้อมรอบสันนิษฐานว่า มีการบูรณะกำแพง เมืองส่วนต่างๆ<br> กันมาหลายครั้งทุกครั้ง คงพยายามรักษา แนวกำแพงเดิมไว้</p>
 
 
             
-        <div><p align="right">บทความจาก: www.paiduaykan.com</p></div>
-    </div>
+        <div><p align="right">บทความจาก: <a href="http://www.paiduaykan.com/76_province/south/nakhonsithammarat/kampang.html">www.paiduaykan.com</a></p></div>
 
-    <!-- Nav Fotter
-    ============================================= -->
-    <section class="rc-footer">
-        <footer class="footer-nav">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 addspacebut col-sm-6 addspacebut col-md-6 col-lg-6">
-                        <ul class="list-unstyled">
-                            
-                        </ul>
-                    </div>
-                    <div class="col-xs-12 addspacebut col-sm-6  addspacebut col-md-3 addspacebut2 col-lg-3">
-                        <h4>    </h4>
-                                                    
-                        </ul>
-                    </div>
-                    <div class="col-xs-12 addspacebut col-sm-6 addspacebut col-md-3 col-lg-3">
-                        <h4>Our Team</h4>
-                        <ul class="list-unstyled">
-                            <li><div class="name">Badin Nhoorag 60070043</div></li>
-                            <li><div class="name">Phuree Kanusont 60070075</div></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        
-    </section>
+        <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4943.938860818031!2d99.9605947964722!3d8.427318614847888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3053013c41bc139b%3A0xea53b8e76db508d3!2z4LiB4Liz4LmB4Lie4LiH4LmA4Lih4Li34Lit4LiH4LmA4LiB4LmI4LiyIOC4iOC4seC4h-C4q-C4p-C4seC4lOC4meC4hOC4o-C4qOC4o-C4teC4mOC4o-C4o-C4oeC4o-C4suC4ig!5e0!3m2!1sth!2sth!4v1525379623492"  
+        frameborder="0" style="border:0" width="150px" allowfullscreen></iframe>
+    </div>
         </div>
+        <div w3-include-html="foot.html"></div>
     <!-- Go To Top
     ============================================= -->
     <div id="gotoTop" class="icon-angle-up"></div>
     <!-- External JavaScripts
     ============================================= -->
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script>
+        w3IncludeHTML();
+    </script>
     <script type="text/javascript" async="" src="js/analytics.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/plugins.js"></script>

@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/popup.css" type="text/css">
     <link rel="stylesheet" href="css/image.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- favicon -->
     <link rel="shortcut icon" href="./img/favicon.png">
     <!-- Document Title
@@ -34,32 +35,56 @@
         ============================================= -->
         <header id="header" class="dark">
             <div id="header-wrap" class="">
-                <div class="container clearfix">
-                    <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
-                    <!-- Logo
-                    ============================================= -->
-                    <div id="logo">
-                        <a href="index.html" class="standard-logo"><img src="./img/logo.png" alt=""></a>
-                        <a href="index.html" class="retina-logo"><img src="./img/logo.png" alt=""></a>
-                    </div>
-                    <!-- #logo end -->
-                    <!-- Primary Navigation
-                    ============================================= -->
-                    <nav id="primary-menu">
-                        <ul class="sf-js-enabled" style="touch-action: pan-y;">
-                            <li><a href="article_home.html">แหล่งท่องเที่ยว</a>
-                        </ul>
-                    </nav>
+                    <div w3-include-html="navbar.html"></div>
                 </div>
             </div>
-        </header>
+        </header> 
         <!-- Nav Bar End
         ============================================= -->
         <body>
 
         <div class="td-post-content"><div class="tTop">
 
-            <section align="center"><img src="img/big-banner-01.jpg" alt="ดื่มน้ำอุ่น"></section>
+            <!-- One Big Banner  -->
+        <section class="big-banner">
+            <div class="container-full">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="img/water_0001_Layer 9.jpg" alt="Los Angeles" style="width:100%;">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/water_0000_Layer 10.jpg" alt="Chicago" style="width:100%;">
+                        </div>
+
+                        <div class="item">
+                            <img src="img/water_0002_Layer 8.jpg" alt="New york" style="width:100%;">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ariticle start -->
             <h1>น้ำตกกรุงชิง</h1>
             <p style="text-indent: 2.5em;">น้ำตกกรุงชิง อีกหนึ่งน้ำตกที่มีความสวยงามและมีชื่อเสียงมากเป็นอันดับต้นๆของจังหวัดนครศรีธรรมราช<br> น้ำตกตั้งอยู่ในเขตพื้นที่ของ อุทยานแห่งชาติเขาหลวง อุทยาน แห่งชาติที่ตั้งอยู่ในตำบลกรุงชิง ชื่อ <br>"กรุงชิง" มาจากคำว่า "ต้นชิง" ซึ่งเป็นพันธุ์ไม้ตระกูลปาล์มชนิดหนึ่งที่มีอยู่มาก ในเขตนี้ที่นี่<br>มีประวัติศาสตร์จากการที่เคยเป็นที่ตั้งของกลุ่ม คอมมิวนิสต์ แต่ปัจจุบันกลายมาเป็นแหล่งท่องเที่ยวที่สวยงามที่ <br>มีผู้คนมาเยือนไม่ขาดสาย ด้วยน้ำตกขนาด 7 ชั้น ที่ลดหลั่นความสูงลงมาต่างๆ ระดับกัน ในป่าเขตนี้ยังเป็น<br>เส้นทางเดินศึกษาธรรมชาติของป่าที่อุดมสมบูรณ์อีกด้วย เนื่องจาก มีพืชพรรณไม้ต่างๆ ให้ได้ศึกษา<br> เช่น เฟิร์นมหาสดำ ปาล์มชก ต้นหลุมพอ ปาล์มชิง ปาล์มช้างร้องไห้ และอื่นๆอีกหลายชนิด<br>ที่หาชมได้เฉพาะที่นี่เท่านั้น 
 
@@ -67,46 +92,25 @@
 
 
             
-        <div><p align="right">บทความจาก: www.paiduaykan.com</p></div>
+        <div><p align="right">บทความจาก: <a href="http://www.paiduaykan.com/province/south/nakhonsithammarat/krungchingwaterfall.html">www.paiduaykan.com</a></div>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35229.01332274528!2d99.67044453988336!3d8.726333898792918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3053962dcd49ec27%3A0xb82344e09410d120!2z4LiZ4LmJ4Liz4LiV4LiB4LiB4Lij4Li44LiH4LiK4Li04LiH!5e0!3m2!1sth!2sth!4v1525380347530"  frameborder="0" style="border:0" width="150px" allowfullscreen></iframe>
     </div>
-
-    <!-- Nav Fotter
-    ============================================= -->
-    <section class="rc-footer">
-        <footer class="footer-nav">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 addspacebut col-sm-6 addspacebut col-md-6 col-lg-6">
-                        <ul class="list-unstyled">
-                            
-                        </ul>
-                    </div>
-                    <div class="col-xs-12 addspacebut col-sm-6  addspacebut col-md-3 addspacebut2 col-lg-3">
-                        <h4>    </h4>
-                                                    
-                        </ul>
-                    </div>
-                    <div class="col-xs-12 addspacebut col-sm-6 addspacebut col-md-3 col-lg-3">
-                        <h4>Our Team</h4>
-                        <ul class="list-unstyled">
-                            <li><div class="name">Badin Nhoorag 60070043</div></li>
-                            <li><div class="name">Phuree Kanusont 60070075</div></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        
-    </section>
         </div>
+        <div w3-include-html="foot.html"></div>
     <!-- Go To Top
     ============================================= -->
     <div id="gotoTop" class="icon-angle-up"></div>
     <!-- External JavaScripts
     ============================================= -->
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <script>
+        w3IncludeHTML();
+    </script>
     <script type="text/javascript" async="" src="js/analytics.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
+
     <!-- Footer Scripts
     ============================================= -->
     <script type="text/javascript" src="js/functions.js"></script>
