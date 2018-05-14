@@ -14192,7 +14192,6 @@ h2 {
     content: "\e90c";
 }
 [class*=" icon-"]:before, [class^=icon-]:before {
-    
     speak: none;
     font-style: normal;
     font-weight: 400;
@@ -15752,4 +15751,9 @@ footer .text-left, footer .text-right {
 @media (max-width: 1024px)
 footer .text-left, footer .text-right {
     text-align: center;
+}
+
+.embed-responsive.embed-responsive-16by9
+{
+padding-bottom: 34%
 }
